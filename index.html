@@ -3,13 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tourism</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <title>Tourism</title>
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg bg-warning ps-5 p-3">
+            <nav class="navbar navbar-expand-lg bg-warning ps-5 p-3 fixed-top">
                 <div class="container-fluid fw-bold fs-5 pe-5">
+                  <i class="bi bi-airplane-fill"></i>
                   <a class="navbar-brand" href="#home">Pylot's-Tour Book</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,7 +23,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#destinations">Destinations</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">About</a>
                             </li>
@@ -40,6 +41,57 @@
                 </div>
             </nav>
         </header>
+        <!-- Main section -->
+        <section id="home" class="mt-5 mb-5">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/rising-sun.jpg" class="d-block w-100" alt="img">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/street.webp" class="d-block w-100" alt="img">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/1200px-Flag_of_Japan.svg.webp" class="d-block w-100" alt="img">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- end of carousel -->
+
+        <section id="destinations">
+
+         <div class="container-fluid">
+            <p class="h1 fw-5 mt-5 mb-5 text-center">Popular Destinations</p>
+          </div>
+          <div class="container">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tokyo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis architecto aliquid excepturi recusandae quia quisquam et eos nam magni laborum. Reprehenderit aspernatur excepturi veniam est odit voluptatum iure tempore asperiores!</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </section>
     
 
 
