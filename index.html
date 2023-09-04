@@ -19,17 +19,26 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                <span class="show-title" data-bs-placement="bottom" title="home">
+                                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                </span>
                             </li>
                             <li class="nav-item">
+                              <span class="show-title" data-bs-placement="bottom" title="destination">
                                 <a class="nav-link" href="#destinations">Destinations</a>
-                            <li class="nav-item">
+                              </span>
+                            </li>
+                            <li>
+                              <span class="show-title" data-bs-placement="bottom" title="about">
                                 <a class="nav-link" href="#about">About</a>
+                              </span>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Contact Us
-                                </a>
+                                <span class="show-title" data-bs-placement="bottom" title="contact-us">
+                                  <a class="nav-link dropdown-toggle" href="#contact" role="button"    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contact Us
+                                  </a>
+                                </span>
                                 <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Email</a></li>
                                 <li><a class="dropdown-item" href="#">Phone</a></li>
@@ -210,5 +219,11 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
         </script>
+
+        <script>
+          const tooltipTriggerList = document.querySelectorAll('.show-title')
+          const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+
     </body>
 </html>
